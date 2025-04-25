@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        header {
+            background: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        .hero {
+            display: flex;
+            min-height: 80vh;
+            background: url('https://picsum.photos/1600/800') no-repeat center/cover;
+            align-items: center;
+            justify-content: center;
+        }
+        .features {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to CodSoft</h1>
+        <p>Learn Web Development</p>
+    </header>
+    
+    <div class="hero">
+        <h2>Start Your Journey Today</h2>
+    </div>
+
+    <section class="features">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Learn markup fundamentals</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Style your websites</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Add interactivity</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CodSoft. All rights reserved</p>
+    </footer>
+</body>
+</html>
